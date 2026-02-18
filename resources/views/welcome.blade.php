@@ -53,7 +53,8 @@
 
                     @php
                         $icsUrl = route('calendar.ics');
-                        $googleUrl = "https://calendar.google.com/calendar/render?cid=" . urlencode($icsUrl);
+                        $webcalUrl = str_replace('https://', 'webcal://', $icsUrl);
+                        $googleUrl = "https://calendar.google.com/calendar/render?cid=" . urlencode($webcalUrl);
                         $outlookUrl = "https://outlook.live.com/calendar/0/addfromweb?url=" . urlencode($icsUrl);
                     @endphp
 
