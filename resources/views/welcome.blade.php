@@ -41,7 +41,9 @@
 
                 <p class="text-black font-mono">March 2-3, 2026 &bull; Amsterdam, Netherlands</p>
 
-                <div class="flex flex-col gap-3 mt-8 mb-8">
+                <p class="text-zinc-600 mt-6">All the talks. All the breaks. Even the After Dark party.</p>
+
+                <div class="flex flex-col gap-3 mt-4 mb-8">
                     <flux:button
                         href="{{ route('calendar.download') }}"
                         icon="arrow-down-tray"
