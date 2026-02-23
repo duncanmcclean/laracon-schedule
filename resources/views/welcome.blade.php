@@ -20,6 +20,10 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @fluxAppearance
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="PQGZSARV" defer></script>
+    <!-- / Fathom -->
 </head>
 <body class="h-full bg-[#FCF2EF] flex flex-col">
     <div class="flex flex-col md:flex-row min-h-full">
