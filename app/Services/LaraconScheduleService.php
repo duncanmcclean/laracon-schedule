@@ -9,11 +9,15 @@ use Spatie\IcalendarGenerator\Components\Event;
 
 class LaraconScheduleService
 {
-    private const TIMEZONE = 'Europe/Amsterdam';
+    private const TIMEZONE = 'America/New_York';
 
-    private const MAIN_VENUE = 'Passenger Terminal Amsterdam, Piet Heinkade 27, 1019 BR Amsterdam, Netherlands';
+    private const MAIN_VENUE = 'SoWa Power Station, 550 Harrison Ave, Boston, MA 02118, United States';
 
-    private const AFTER_DARK_VENUE = 'Lowlander Botanical Bar, Gedempt Hamerkanaal 201, 1021 KP Amsterdam, Netherlands';
+    private const DODGEBALL_VENUE = 'Cathedral High School, 74 Union Park, Boston, MA 02118, United States';
+
+    private const LARABELLES_VENUE = 'Boston, MA (venue TBA)';
+
+    private const LARAPROM_VENUE = 'Cathedral High School, 74 Union Park, Boston, MA 02118, United States';
 
     /**
      * @return array<int, array{date: string, title: string, speaker: string|null, start: string, end: string, venue: string}>
@@ -21,48 +25,49 @@ class LaraconScheduleService
     public function getSchedule(): array
     {
         return [
-            // Day 1 - March 2, 2026
-            ['date' => '2026-03-02', 'title' => 'Registration', 'speaker' => null, 'start' => '08:30', 'end' => '09:15', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'LARACON_INIT', 'speaker' => 'Nuno Maduro', 'start' => '09:15', 'end' => '09:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Write better abstractions: lessons from an import system', 'speaker' => 'Dan Harrin', 'start' => '09:30', 'end' => '10:00', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Handling the unhappy path', 'speaker' => 'Ryan Chandler', 'start' => '10:00', 'end' => '10:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Break', 'speaker' => null, 'start' => '10:30', 'end' => '11:00', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Things you didn\'t know you could do in CSS', 'speaker' => 'Leah Thompson', 'start' => '11:00', 'end' => '11:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'One billion rows with Laravel', 'speaker' => 'Tobias Petry', 'start' => '11:30', 'end' => '12:00', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Unblocking your users with AI', 'speaker' => 'Peter Suhm', 'start' => '12:00', 'end' => '12:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Lunch', 'speaker' => null, 'start' => '12:30', 'end' => '14:00', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Against all odds: NativePHP for mobile one year later', 'speaker' => 'Simon Hamp', 'start' => '14:00', 'end' => '14:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Composer Deep Dive', 'speaker' => 'Nils Adermann', 'start' => '14:30', 'end' => '15:00', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Effective Code Reviews: What NOT to Do', 'speaker' => 'Luke Kuzmish', 'start' => '15:00', 'end' => '15:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Break', 'speaker' => null, 'start' => '15:30', 'end' => '16:00', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'AI won\'t fail loudly — It\'ll fail quietly', 'speaker' => 'Yannick Kupferschmidt', 'start' => '16:00', 'end' => '16:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Laravel Update', 'speaker' => 'Taylor Otwell', 'start' => '16:30', 'end' => '17:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'Social Drinks', 'speaker' => null, 'start' => '17:30', 'end' => '18:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => '#Larabelles Happy Hour', 'speaker' => null, 'start' => '18:30', 'end' => '19:30', 'venue' => 'main'],
-            ['date' => '2026-03-02', 'title' => 'After Dark Party', 'speaker' => null, 'start' => '21:00', 'end' => '00:00', 'venue' => 'after_dark'],
+            // Day 0 - July 27, 2026
+            ['date' => '2026-07-27', 'title' => 'Dodgeball', 'speaker' => null, 'start' => '15:00', 'end' => '17:00', 'venue' => 'dodgeball'],
+            ['date' => '2026-07-27', 'title' => 'Larabelles Meetup', 'speaker' => null, 'start' => '16:00', 'end' => '18:00', 'venue' => 'larabelles'],
+            ['date' => '2026-07-27', 'title' => 'Laraprom with Mostly Technical', 'speaker' => null, 'start' => '20:00', 'end' => '22:00', 'venue' => 'laraprom'],
 
-            // Day 2 - March 3, 2026
-            ['date' => '2026-03-03', 'title' => 'Welcoming', 'speaker' => null, 'start' => '08:30', 'end' => '09:15', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'LARACON_INIT', 'speaker' => 'Nuno Maduro', 'start' => '09:15', 'end' => '09:30', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'State of the Frontend', 'speaker' => 'Joe Tannenbaum', 'start' => '09:30', 'end' => '10:00', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Building applications like Puzzles', 'speaker' => 'Wendell Adriel', 'start' => '10:00', 'end' => '10:30', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Break', 'speaker' => null, 'start' => '10:30', 'end' => '11:00', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'This shouldn\'t work', 'speaker' => 'Shane Rosenthal', 'start' => '11:00', 'end' => '11:30', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'How real-world UX helps your projects thrive', 'speaker' => 'Pete Heslop', 'start' => '11:30', 'end' => '12:00', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Ship to Production on DAY 1', 'speaker' => 'John Drexler', 'start' => '12:00', 'end' => '12:30', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Lunch', 'speaker' => null, 'start' => '12:30', 'end' => '14:30', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Imports, a war story', 'speaker' => 'Daniel Coulbourne', 'start' => '14:30', 'end' => '15:00', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Refactoring to Parallel', 'speaker' => 'Marcel Pociot', 'start' => '15:00', 'end' => '15:30', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Break', 'speaker' => null, 'start' => '15:30', 'end' => '16:00', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Laravel Panel', 'speaker' => null, 'start' => '16:00', 'end' => '17:15', 'venue' => 'main'],
-            ['date' => '2026-03-03', 'title' => 'Social Drinks', 'speaker' => null, 'start' => '17:30', 'end' => '18:30', 'venue' => 'main'],
+            // Day 1 - July 28, 2026
+            ['date' => '2026-07-28', 'title' => 'Opening', 'speaker' => 'Aaron Francis', 'start' => '09:30', 'end' => '09:40', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Pest 5', 'speaker' => 'Nuno Maduro', 'start' => '09:40', 'end' => '10:05', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'From Vibe Coding to Vibe Engineering', 'speaker' => 'Kitze', 'start' => '10:05', 'end' => '10:30', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Cleverness Is A Loan', 'speaker' => 'Mary Perry', 'start' => '10:30', 'end' => '10:55', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Morning Break', 'speaker' => null, 'start' => '10:55', 'end' => '11:25', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'The Desired State', 'speaker' => 'Chris Fidao', 'start' => '11:25', 'end' => '11:50', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Building Software at the Edge of Your Understanding', 'speaker' => 'Matt Stauffer', 'start' => '11:50', 'end' => '12:15', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Lunch', 'speaker' => null, 'start' => '12:15', 'end' => '13:45', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Proven Package Patterns', 'speaker' => 'Freek Van Der Herten', 'start' => '13:45', 'end' => '14:10', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Building Realtime Collaborative Apps with Laravel', 'speaker' => 'Joe Tannenbaum', 'start' => '14:10', 'end' => '14:35', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Afternoon Break', 'speaker' => null, 'start' => '14:35', 'end' => '15:05', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Upload to Playback: Building a Video Processing Pipeline', 'speaker' => 'Joshua Alphonse', 'start' => '15:05', 'end' => '15:30', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Whimsy-Driven Development', 'speaker' => 'Christina Martinez', 'start' => '15:30', 'end' => '16:00', 'venue' => 'main'],
+            ['date' => '2026-07-28', 'title' => 'Laravel Updates', 'speaker' => 'Taylor Otwell', 'start' => '16:00', 'end' => '17:00', 'venue' => 'main'],
+
+            // Day 2 - July 29, 2026
+            ['date' => '2026-07-29', 'title' => 'Opening', 'speaker' => 'Aaron Francis', 'start' => '09:30', 'end' => '09:35', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'The Last Software Engineer', 'speaker' => 'Kent C. Dodds', 'start' => '09:35', 'end' => '10:00', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Building a CLI Coding Agent from Scratch', 'speaker' => 'Mateus Guimarães', 'start' => '10:00', 'end' => '10:25', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Git, But Better: an introduction to JJ', 'speaker' => 'Pauline Vos', 'start' => '10:25', 'end' => '10:50', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Morning Break', 'speaker' => null, 'start' => '10:50', 'end' => '11:25', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Filament: Advanced Practical Examples', 'speaker' => 'Povilas Korop', 'start' => '11:25', 'end' => '11:50', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Building for Agents & Humans', 'speaker' => 'Gordon Diggs', 'start' => '11:50', 'end' => '12:15', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Lunch', 'speaker' => null, 'start' => '12:15', 'end' => '13:45', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Think Harder: How I Prompt', 'speaker' => 'Thorsten Ball', 'start' => '13:45', 'end' => '14:10', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'AI Can Do Your Job… What Now?', 'speaker' => 'Will King', 'start' => '14:10', 'end' => '14:35', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Afternoon Break', 'speaker' => null, 'start' => '14:35', 'end' => '15:00', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Laravel Community Update', 'speaker' => null, 'start' => '15:00', 'end' => '15:15', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Scaling Laravel', 'speaker' => 'Devon Garbalosa', 'start' => '15:15', 'end' => '15:40', 'venue' => 'main'],
+            ['date' => '2026-07-29', 'title' => 'Closing Panel', 'speaker' => null, 'start' => '15:40', 'end' => '17:00', 'venue' => 'main'],
         ];
     }
 
     public function generateCalendar(): Calendar
     {
-        $calendar = Calendar::create('Laracon EU 2026')
-            ->productIdentifier('-//Laracon EU//Schedule//EN');
+        $calendar = Calendar::create('Laracon US 2026')
+            ->productIdentifier('-//Laracon US//Schedule//EN');
 
         $timezone = new DateTimeZone(self::TIMEZONE);
 
@@ -71,9 +76,12 @@ class LaraconScheduleService
                 ? "{$item['title']} - {$item['speaker']}"
                 : $item['title'];
 
-            $venue = $item['venue'] === 'after_dark'
-                ? self::AFTER_DARK_VENUE
-                : self::MAIN_VENUE;
+            $venue = match ($item['venue']) {
+                'dodgeball' => self::DODGEBALL_VENUE,
+                'larabelles' => self::LARABELLES_VENUE,
+                'laraprom' => self::LARAPROM_VENUE,
+                default => self::MAIN_VENUE,
+            };
 
             $startsAt = new DateTimeImmutable("{$item['date']} {$item['start']}", $timezone);
 
