@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laracon EU 2026 Schedule</title>
-    <meta name="description" content="Add the Laracon EU 2026 schedule to your calendar. March 2-3, Amsterdam.">
+    <title>Laracon US 2026 Schedule</title>
+    <meta name="description" content="Add the Laracon US 2026 schedule to your calendar. July 27-29, Boston.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="Laracon EU 2026 Schedule">
-    <meta property="og:description" content="Add the Laracon EU 2026 schedule to your calendar. March 2-3, Amsterdam.">
+    <meta property="og:title" content="Laracon US 2026 Schedule">
+    <meta property="og:description" content="Add the Laracon US 2026 schedule to your calendar. July 27-29, Boston.">
     <meta property="og:image" content="{{ asset('social.png') }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
-    <meta name="twitter:title" content="Laracon EU 2026 Schedule">
-    <meta name="twitter:description" content="Add the Laracon EU 2026 schedule to your calendar. March 2-3, Amsterdam.">
+    <meta name="twitter:title" content="Laracon US 2026 Schedule">
+    <meta name="twitter:description" content="Add the Laracon US 2026 schedule to your calendar. July 27-29, Boston.">
     <meta name="twitter:image" content="{{ asset('social.png') }}">
+
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @fluxAppearance
@@ -25,27 +28,26 @@
     <script src="https://cdn.usefathom.com/script.js" data-site="PQGZSARV" defer></script>
     <!-- / Fathom -->
 </head>
-<body class="h-full bg-[#FCF2EF] flex flex-col">
+<body class="h-full bg-[#F2F2F2] flex flex-col">
     <div class="flex flex-col md:flex-row min-h-full">
         <div class="relative h-[400px] md:hidden">
-            <img src="{{ asset('matheo-jbt-3vQXi_i0P4w-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
+            <img src="{{ asset('samuel-damon-4P5xkvdTrhQ-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
         </div>
         <div class="flex flex-1 flex-col justify-start md:justify-center px-4 py-12 sm:px-6 md:flex-none md:px-20 xl:px-24">
             <div class="mx-auto w-full max-w-sm md:w-96">
-                <svg class="h-12 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 678 119">
-                    <g clip-path="url(#a)">
-                        <path fill="black" d="M298.112 34.807c-.892 5.95-1.487 13.983-1.487 24.098 0 10.115.446 18.296 1.487 24.395 1.041 6.248 2.527 10.71 4.609 13.536 2.082 2.826 4.609 4.165 7.583 4.165s6.988-2.38 8.921-7.288c2.082-4.76 2.974-12.05 2.974-21.867h22.6c0 9.818-1.338 18.296-4.163 25.288-2.677 6.991-6.691 12.346-11.895 16.213-5.204 3.719-11.449 5.653-18.734 5.653-7.286 0-11.152-1.339-15.761-3.868-4.609-2.528-8.475-6.396-11.597-11.453-3.123-5.058-5.502-11.305-6.989-18.594-1.635-7.438-2.378-15.916-2.378-25.585s.743-18.148 2.378-25.585c1.636-7.438 4.015-13.685 7.137-18.594 3.123-5.057 6.989-8.776 11.746-11.454C299.45 1.34 304.803 0 310.75 0c5.947 0 13.382 1.785 18.586 5.504 5.055 3.719 8.921 9.074 11.597 16.065 2.676 6.991 4.014 15.47 4.014 25.585h-22.451c0-10.115-1.041-17.404-2.974-22.164-2.081-4.611-5.055-6.991-9.069-6.991-4.015 0-5.65 1.338-7.732 3.867-2.082 2.678-3.568 6.843-4.46 12.793l-.149.148Zm-45.498-33.32 22.452 116.025h-22.749l-3.866-24.99h-22.6l-3.865 24.99h-21.262L223.175 1.487h29.439Zm-6.988 73.334-8.475-54.888-8.475 54.888h17.099-.149ZM106.904 1.487l22.451 116.025h-22.748l-3.866-24.99h-22.6l-3.866 24.99H55.013L77.465 1.487h29.439Zm-6.988 73.334L91.44 19.933 82.966 74.82h17.098-.148ZM23.343 1.487H0v116.025h50.553v-17.7h-27.21V1.486ZM423.9 26.477c2.973 8.777 4.312 19.635 4.312 32.577 0 12.941-.893 18.296-2.528 25.882-1.636 7.438-4.163 13.685-7.434 18.743-3.271 5.057-7.286 8.776-12.044 11.453-4.758 2.529-10.408 3.868-16.652 3.868-6.245 0-11.895-1.339-16.653-3.868-4.758-2.528-8.921-6.396-12.043-11.453-3.271-5.058-5.65-11.305-7.435-18.743-1.635-7.437-2.527-16.065-2.527-25.882 0-9.818 1.487-23.651 4.312-32.428 2.973-8.776 7.285-15.321 12.935-19.932C373.941 2.23 381.078 0 389.404 0s15.76 2.231 21.41 6.694c5.799 4.462 10.111 11.007 12.936 19.932l.149-.149Zm-19.032 32.428c0-9.669-.595-17.404-1.635-23.502-1.041-5.95-2.825-10.413-5.056-13.24-2.23-2.826-5.204-4.164-8.772-4.164-3.568 0-6.393 1.338-8.624 4.165-2.23 2.826-3.866 7.14-4.906 13.09-1.041 5.95-1.487 13.834-1.487 23.502 0 9.669.595 17.701 1.635 23.949 1.041 6.248 2.677 10.859 4.907 13.685 2.23 2.975 5.055 4.463 8.475 4.463s6.542-1.488 8.772-4.463c2.231-2.975 4.015-7.586 5.056-13.685 1.04-6.248 1.635-14.131 1.635-23.949v.149Zm77.911-57.418V78.54L463.003 1.487h-27.358v116.025h21.262V40.46l19.775 77.052h27.357V1.487h-21.261ZM184.963 58.46c2.676 1.338 4.758 3.123 6.245 5.206 2.974 4.165 4.46 9.52 4.46 16.065v37.634h-22.897v-36.89c0-3.719-.892-6.545-2.528-8.479-1.784-1.934-4.163-2.826-7.285-2.826h-5.055v48.195h-22.898V1.487h31.819c6.839 0 12.489 1.488 17.098 4.314 4.461 2.975 7.881 6.694 10.111 11.454 2.23 4.76 3.42 9.966 3.42 15.768 0 5.8-2.082 14.28-6.245 19.486-1.784 2.231-4.015 4.313-6.542 5.95h.297Zm-10.11-23.8c0-5.355-.892-9.52-2.825-12.198-1.933-2.826-4.61-4.165-8.029-4.165H158.2V51.32h5.799c3.419 0 6.096-1.339 8.029-4.165 1.933-2.827 2.825-6.992 2.825-12.347v-.148Z"/><path fill="#FE96E7" d="M541.211 90.737h-26.764v26.775h26.764V90.737ZM573.029 99.811h30.629v17.701h-53.526V1.487h52.188V19.19h-29.291v29.75h27.804v17.404h-27.804V99.81Zm82.074-98.324V89.4c0 3.867-.892 6.694-2.528 8.627-1.784 1.934-4.163 2.827-7.286 2.827-3.122 0-5.352-.893-7.136-2.827-1.785-1.933-2.677-4.76-2.677-8.627V1.487h-22.897v82.557c0 10.71 2.825 19.188 8.326 25.585 5.502 6.247 13.679 9.371 24.384 9.371 10.706 0 18.883-3.124 24.385-9.371 5.501-6.248 8.326-14.727 8.326-25.585V1.488h-22.897Z"/>
-                    </g>
-                    <defs>
-                        <clipPath id="a">
-                            <path fill="#fff" d="M0 0h678v119H0z"/>
-                        </clipPath>
-                    </defs>
+                <svg class="h-7 mb-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 119 28">
+                    <path d="M103.154 0.378378V27.6216H108.071V9.54289L112.647 27.6216H119V0.378378H114.084V18.4571L109.508 0.378378H103.154Z" fill="currentColor"/>
+                    <path d="M92.2577 28C90.7954 28 89.497 27.6973 88.3625 27.0919C87.2531 26.4865 86.3203 25.591 85.5639 24.4054C84.8076 23.1946 84.2277 21.7189 83.8243 19.9784C83.4461 18.2126 83.257 16.182 83.257 13.8865C83.257 10.8595 83.5974 8.32432 84.2781 6.28108C84.9588 4.21261 85.9673 2.64865 87.3036 1.58919C88.6398 0.529729 90.2786 0 92.2199 0C94.2116 0 95.8756 0.529729 97.2119 1.58919C98.5481 2.62342 99.5566 4.17478 100.237 6.24324C100.918 8.31171 101.258 10.8721 101.258 13.9243C101.258 16.2198 101.057 18.2505 100.653 20.0162C100.275 21.7568 99.7078 23.2198 98.9515 24.4054C98.1951 25.591 97.2497 26.4865 96.1151 27.0919C95.0058 27.6973 93.72 28 92.2577 28ZM92.2199 23.7622C93.0519 23.7622 93.7326 23.4216 94.2621 22.7405C94.7915 22.0342 95.1823 20.9496 95.4344 19.4865C95.6865 18.0234 95.8126 16.1441 95.8126 13.8486C95.8126 11.5784 95.6865 9.73694 95.4344 8.32432C95.1823 6.91171 94.7915 5.87748 94.2621 5.22162C93.7326 4.56577 93.0519 4.23784 92.2199 4.23784C91.4131 4.23784 90.745 4.56577 90.2155 5.22162C89.6861 5.87748 89.2953 6.91171 89.0432 8.32432C88.8163 9.71171 88.7028 11.5532 88.7028 13.8486C88.7028 16.1441 88.8289 18.0234 89.081 19.4865C89.3331 20.9496 89.7113 22.0342 90.2155 22.7405C90.745 23.4216 91.4131 23.7622 92.2199 23.7622Z" fill="currentColor"/>
+                    <path d="M73.2758 28C71.8891 28 70.6537 27.6973 69.5696 27.0919C68.4855 26.4865 67.5779 25.591 66.8467 24.4054C66.1156 23.2198 65.5609 21.7568 65.1827 20.0162C64.8046 18.2757 64.6155 16.2703 64.6155 14C64.6155 11.7297 64.8046 9.72432 65.1827 7.98378C65.5609 6.24324 66.1156 4.78018 66.8467 3.59459C67.6031 2.40901 68.5233 1.51351 69.6074 0.908108C70.7168 0.302702 71.9774 0 73.3892 0C75.1036 0 76.5533 0.441441 77.7383 1.32432C78.9485 2.18198 79.8687 3.43063 80.499 5.07027C81.1293 6.70991 81.4444 8.71532 81.4444 11.0865H76.1499C76.1499 8.71532 75.9104 6.98739 75.4314 5.9027C74.9524 4.79279 74.2338 4.23784 73.2758 4.23784C72.5446 4.23784 71.9395 4.55315 71.4605 5.18378C70.9815 5.78919 70.6285 6.7982 70.4016 8.21081C70.1747 9.5982 70.0612 11.4775 70.0612 13.8486C70.0612 16.2198 70.1747 18.1369 70.4016 19.6C70.6537 21.0631 71.0193 22.1225 71.4983 22.7784C71.9774 23.4342 72.5698 23.7622 73.2758 23.7622C74.2086 23.7622 74.9145 23.1946 75.3936 22.0595C75.8726 20.9243 76.1121 19.209 76.1121 16.9135H81.4444C81.4444 19.2342 81.1167 21.227 80.4612 22.8919C79.8309 24.5315 78.898 25.7928 77.6627 26.6757C76.4525 27.5586 74.9902 28 73.2758 28Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.6607 27.6216V0.378378H39.1486C40.7622 0.378378 42.0984 0.718919 43.1573 1.4C44.2162 2.08108 45.0104 2.98919 45.5399 4.12432C46.0693 5.23423 46.334 6.45766 46.334 7.79459C46.334 9.63604 45.8424 11.1622 44.8591 12.373C44.44 12.9027 43.9315 13.3673 43.3338 13.7667C43.9737 14.0878 44.4695 14.4935 44.8213 14.9838C45.5273 15.9676 45.8802 17.2288 45.8802 18.7676V27.6216H40.5101V18.9568C40.5101 18.0739 40.3084 17.418 39.905 16.9892C39.5016 16.5351 38.9343 16.3081 38.2032 16.3081H37.0308V27.6216H31.6607ZM38.392 12.0704C39.1988 12.0704 39.8291 11.7425 40.2829 11.0866C40.7367 10.4308 40.9636 9.45961 40.9636 8.17312C40.9636 6.91186 40.7367 5.9533 40.2829 5.29745C39.8291 4.64159 39.1988 4.31366 38.392 4.31366H37.0305V12.0704H38.392Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8182 27.6216L18.1505 0.378378H25.109L30.4414 27.6216H25.0334L24.1134 21.7568H18.768L17.848 27.6216H12.8182ZM23.4605 17.5945L21.4407 4.71791L19.4208 17.5945H23.4605Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M47.1062 27.6216L52.4385 0.378378H59.397L64.7294 27.6216H59.3214L58.4014 21.7568H53.056L52.136 27.6216H47.1062ZM57.7485 17.5945L55.7287 4.71791L53.7088 17.5945H57.7485Z" fill="currentColor"/>
+                    <path d="M0 0.378378V27.6216H11.6479V23.4595H5.37015V0.378378H0Z" fill="currentColor"/>
                 </svg>
 
-                <p class="text-black font-mono">March 2-3, 2026 &bull; Amsterdam, Netherlands</p>
+                <p class="text-black font-mono">July 27-29, 2026 &bull; Boston, MA</p>
 
-                <p class="text-zinc-600 mt-6">All the talks. All the breaks. Even the After Dark party.</p>
+                <p class="text-zinc-600 mt-6">All the talks. All the breaks. Even the After Party.</p>
 
                 <div class="flex flex-col gap-3 mt-4 mb-8">
                     <flux:button
@@ -80,12 +82,12 @@
                 </div>
 
                 <footer>
-                    <p class="font-mono text-xs text-zinc-400 leading-6">Unofficial. Created by <a class="hover:text-[#FE96E7] hover:underline" href="https://duncanmcclean.com" target="_blank">Duncan McClean</a>. Not affiliated with Laravel Holdings Inc or Laracon EU.</p>
+                    <p class="font-mono text-xs text-zinc-400 leading-6">Unofficial. Created by <a class="hover:text-[#FF2D20] hover:underline" href="https://duncanmcclean.com" target="_blank">Duncan McClean</a>. Not affiliated with Laravel Holdings Inc or Laracon US.</p>
                 </footer>
             </div>
         </div>
         <div class="relative hidden md:block md:flex-1">
-            <img src="{{ asset('matheo-jbt-3vQXi_i0P4w-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
+            <img src="{{ asset('samuel-damon-4P5xkvdTrhQ-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
         </div>
     </div>
 
