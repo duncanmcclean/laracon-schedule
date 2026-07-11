@@ -31,7 +31,7 @@
 <body class="h-full bg-[#F2F2F2] flex flex-col">
     <div class="flex flex-col md:flex-row min-h-full">
         <div class="relative h-[400px] md:hidden">
-            <img src="{{ asset('samuel-damon-4P5xkvdTrhQ-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
+            <img src="{{ asset('sean-sweeney-Jx9vpP0TnS8-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
         </div>
         <div class="flex flex-1 flex-col justify-start md:justify-center px-4 py-12 sm:px-6 md:flex-none md:px-20 xl:px-24">
             <div class="mx-auto w-full max-w-sm md:w-96">
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="relative hidden md:block md:flex-1">
-            <img src="{{ asset('samuel-damon-4P5xkvdTrhQ-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
+            <img src="{{ asset('sean-sweeney-Jx9vpP0TnS8-unsplash.jpg') }}" alt="" class="absolute inset-0 size-full object-cover" />
         </div>
     </div>
 
