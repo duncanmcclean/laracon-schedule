@@ -10,13 +10,13 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:title" content="Laracon US 2026 Schedule">
     <meta property="og:description" content="Add the Laracon US 2026 schedule to your calendar. July 27-29, Boston.">
-    <meta property="og:image" content="{{ asset('social.png') }}">
+    <meta property="og:image" content="{{ asset('social-us-2026.png') }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="twitter:title" content="Laracon US 2026 Schedule">
     <meta name="twitter:description" content="Add the Laracon US 2026 schedule to your calendar. July 27-29, Boston.">
-    <meta name="twitter:image" content="{{ asset('social.png') }}">
+    <meta name="twitter:image" content="{{ asset('social-us-2026.png') }}">
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
