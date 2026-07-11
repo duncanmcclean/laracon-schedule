@@ -13,6 +13,6 @@ class DownloadCalendarController extends Controller
 
         return response($calendar)
             ->header('Content-Type', 'text/calendar; charset=utf-8')
-            ->header('Content-Disposition', 'attachment; filename="laracon-eu-2026.ics"');
+            ->header('Content-Disposition', 'attachment; filename="laracon-us-2026.ics"');
     }
 }
