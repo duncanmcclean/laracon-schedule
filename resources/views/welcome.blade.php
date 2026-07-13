@@ -49,38 +49,75 @@
 
                 <p class="text-black font-mono">July 27-29, 2026 &bull; Boston, MA</p>
 
-                <p class="text-zinc-600 mt-6">All the talks. All the breaks. Even the After Party.</p>
+                <p class="text-zinc-600 mt-3">All the talks. All the breaks. Even the After Party.</p>
 
-                <div class="flex flex-col gap-3 mt-4 mb-8">
-                    <flux:button
-                        href="{{ route('calendar.download') }}"
-                        icon="arrow-down-tray"
-                    >
-                        Download .ics
-                    </flux:button>
+                @php
+                    $icsUrl = route('calendar.ics');
+                    $webcalUrl = str_replace('https://', 'webcal://', $icsUrl);
+                    $googleUrl = "https://calendar.google.com/calendar/render?cid=" . urlencode($webcalUrl);
+                    $outlookUrl = "https://outlook.live.com/calendar/0/addfromweb?url=" . urlencode($icsUrl);
 
-                    @php
-                        $icsUrl = route('calendar.ics');
-                        $webcalUrl = str_replace('https://', 'webcal://', $icsUrl);
-                        $googleUrl = "https://calendar.google.com/calendar/render?cid=" . urlencode($webcalUrl);
-                        $outlookUrl = "https://outlook.live.com/calendar/0/addfromweb?url=" . urlencode($icsUrl);
-                    @endphp
+                    $onlineIcsUrl = route('calendar.ics', ['online' => 1]);
+                    $onlineWebcalUrl = str_replace('https://', 'webcal://', $onlineIcsUrl);
+                    $onlineGoogleUrl = "https://calendar.google.com/calendar/render?cid=" . urlencode($onlineWebcalUrl);
+                    $onlineOutlookUrl = "https://outlook.live.com/calendar/0/addfromweb?url=" . urlencode($onlineIcsUrl);
+                @endphp
 
-                    <flux:button
-                        href="{{ $googleUrl }}"
-                        target="_blank"
-                        icon="google-calendar"
-                    >
-                        Add to Google Calendar
-                    </flux:button>
+                <div class="mt-8 mb-8" x-data="{ audience: 'in-person' }">
+                    <flux:radio.group x-model="audience" variant="segmented" size="sm" class="mb-4">
+                        <flux:radio value="in-person" class="cursor-pointer">Attending in person</flux:radio>
+                        <flux:radio value="online" class="cursor-pointer">Watching online</flux:radio>
+                    </flux:radio.group>
 
-                    <flux:button
-                        href="{{ $outlookUrl }}"
-                        target="_blank"
-                        icon="outlook"
-                    >
-                        Add to Outlook
-                    </flux:button>
+                    <div x-cloak x-show="audience === 'in-person'" class="flex flex-col gap-3">
+                        <flux:button
+                            href="{{ route('calendar.download') }}"
+                            icon="arrow-down-tray"
+                        >
+                            Download .ics
+                        </flux:button>
+
+                        <flux:button
+                            href="{{ $googleUrl }}"
+                            target="_blank"
+                            icon="google-calendar"
+                        >
+                            Add to Google Calendar
+                        </flux:button>
+
+                        <flux:button
+                            href="{{ $outlookUrl }}"
+                            target="_blank"
+                            icon="outlook"
+                        >
+                            Add to Outlook
+                        </flux:button>
+                    </div>
+
+                    <div x-cloak x-show="audience === 'online'" class="flex flex-col gap-3">
+                        <flux:button
+                            href="{{ route('calendar.download', ['online' => 1]) }}"
+                            icon="arrow-down-tray"
+                        >
+                            Download .ics
+                        </flux:button>
+
+                        <flux:button
+                            href="{{ $onlineGoogleUrl }}"
+                            target="_blank"
+                            icon="google-calendar"
+                        >
+                            Add to Google Calendar
+                        </flux:button>
+
+                        <flux:button
+                            href="{{ $onlineOutlookUrl }}"
+                            target="_blank"
+                            icon="outlook"
+                        >
+                            Add to Outlook
+                        </flux:button>
+                    </div>
                 </div>
 
                 <footer>
