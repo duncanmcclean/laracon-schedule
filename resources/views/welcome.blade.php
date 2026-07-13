@@ -49,7 +49,7 @@
 
                 <p class="text-black font-mono">July 27-29, 2026 &bull; Boston, MA</p>
 
-                <p class="text-zinc-600 mt-6">All the talks. All the breaks. Even the After Party.</p>
+                <p class="text-zinc-600 mt-3">All the talks. All the breaks. Even the After Party.</p>
 
                 @php
                     $icsUrl = route('calendar.ics');
